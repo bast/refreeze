@@ -1,0 +1,82 @@
+
+# ReFreeze
+
+### Markdown web slides served cold
+
+Freeze and thaw Markdown to HTML with Remark and (Frozen) Flask
+and serve via GitHub pages.
+
+Example project: https://github.com/scisoft/git-intro/
+
+Example web slides: http://scisoft.github.io/git-intro/
+
+### Do-it-yourself example
+
+Create an empty repository on GitHub e.g. called "example".
+
+Create an empty directory with the same name as the repository
+("example") and in this directory copy-paste the following
+to a file called `talk.md`:
+
+```
+# Title slide
+
+## Your Name
+
+Your affiliation
+
+---
+
+layout: false
+
+## Second slide
+
+- Hey
+- Ho
+- Lets
+- Go
+
+---
+
+## Third slide
+
+- Write me
+```
+
+After that follow these steps:
+
+```shell
+$ git init
+$ git add talk.md
+$ echo "venv/" > .gitignore
+$ git add .gitignore
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install Flask
+$ pip install Frozen-Flask
+$ git submodule add https://github.com/rbast/refreeze.git refreeze
+$ python refreeze/flask_app.py # serve via http://0.0.0.0:5000/
+$ python refreeze/freeze.py    # create static html
+$ git add index.html           # deploy html to github pages
+$ git commit -m "initial commit"
+```
+
+Now create a `gh-pages` branch and push the branch to GitHub
+(adapt username and repository name):
+
+```shell
+$ git checkout -b gh-pages
+$ git remote add origin git@github.com:you/example.git
+$ git push -u origin gh-pages
+```
+
+Few minutes later marvel at http://you.github.io/example/. Yay!
+
+### Serving images
+
+If you want to use images,
+put them under `img/` and reference them like this:
+
+```
+![]({{ base }}/img/picture.jpg)
+```
