@@ -81,5 +81,5 @@ put them under `img/` and reference them like this:
 ![]({{ base }}/img/picture.jpg)
 ```
 
-The directory does not have to be called `img/`.
-`{{ base }}` is replaced by `freeze.py`.
+The directory does not have to be called `img`.
+The placeholder `{{ base }}` is replaced by `freeze.py`.
