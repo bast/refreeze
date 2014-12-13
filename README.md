@@ -9,9 +9,8 @@ Freeze and thaw Markdown to HTML with
 [Flask](http://flask.pocoo.org/)
 and serve via [GitHub pages](https://pages.github.com/).
 
-Example project: https://github.com/scisoft/git-intro/
-
-Example web slides: http://scisoft.github.io/git-intro/
+- Example project: https://github.com/scisoft/git-intro/
+- Example web slides: http://scisoft.github.io/git-intro/
 
 ### Do-it-yourself example
 
