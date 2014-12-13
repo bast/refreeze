@@ -3,8 +3,11 @@
 
 ### Markdown web slides served cold
 
-Freeze and thaw Markdown to HTML with Remark and (Frozen) Flask
-and serve via GitHub pages.
+Freeze and thaw Markdown to HTML with
+[Remark](https://github.com/gnab/remark) and
+[(Frozen)](http://pythonhosted.org/Frozen-Flask/)
+[Flask](http://flask.pocoo.org/)
+and serve via [GitHub pages](https://pages.github.com/).
 
 Example project: https://github.com/scisoft/git-intro/
 
