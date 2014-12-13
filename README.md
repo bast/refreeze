@@ -1,5 +1,5 @@
 
-# ReFreeze
+# reFreeze
 
 ### Markdown web slides served cold
 
@@ -9,6 +9,9 @@ Freeze and thaw Markdown to HTML with
 [Flask](http://flask.pocoo.org/)
 and serve via [GitHub pages](https://pages.github.com/).
 
+- Licensed under a [three clause BSD License](../master/LICENSE)
+- Includes some [Remark](https://github.com/gnab/remark) sources (c) Ole Petter Bang
+- Includes some [Springy](https://github.com/dhotson/springy) sources (c) Dennis Hotson
 - Example project: https://github.com/scisoft/git-intro/
 - Example web slides: http://scisoft.github.io/git-intro/
 
