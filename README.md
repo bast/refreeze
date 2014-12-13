@@ -76,10 +76,14 @@ Few minutes later marvel at http://you.github.io/example/. Yay!
 
 If you want to use images,
 put them under `img/` and reference them like this:
-
 ```
 ![]({{ base }}/img/picture.jpg)
 ```
 
 The directory does not have to be called `img`.
 The placeholder `{{ base }}` is replaced by `freeze.py`.
+
+You can resize images like this:
+```
+<img src="{{ base }}/img/figure.gif" style="width: 400px;"/>
+```
