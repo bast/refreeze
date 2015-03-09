@@ -10,7 +10,7 @@ BASE = '/%s' % app.config['REPO_NAME']
 @app.route('/')
 def home():
     with open('talk.md', 'r') as f:
-        template = Template(f.read())
+        template = Template(f.read().decode('utf-8'))
         markdown = template.render(base=BASE)
         js_file = 'talk.js'
         if os.path.isfile(js_file):
