@@ -45,7 +45,7 @@ layout: false
 
 ## Third slide
 
-- Example equation (with Mathjax): $$ a^2 + b^2 = c^2 $$
+- Example equation (with MathJax): $$ a^2 + b^2 = c^2 $$
 ```
 
 After that follow these steps:
