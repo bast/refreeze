@@ -51,28 +51,28 @@ layout: false
 After that follow these steps:
 
 ```shell
-$ git init
-$ git add talk.md
-$ echo "venv/" > .gitignore
-$ git add .gitignore
-$ virtualenv venv
-$ source venv/bin/activate
-$ pip install Flask
-$ pip install Frozen-Flask
-$ git submodule add https://github.com/rbast/refreeze.git refreeze
-$ python refreeze/flask_app.py # serve via http://0.0.0.0:5000/
-$ python refreeze/freeze.py    # create static html
-$ git add index.html           # deploy html to github pages
-$ git commit -m "initial commit"
+git init
+git add talk.md
+echo "venv/" > .gitignore
+git add .gitignore
+virtualenv venv
+source venv/bin/activate
+pip install Flask
+pip install Frozen-Flask
+git submodule add https://github.com/rbast/refreeze.git refreeze
+python refreeze/flask_app.py # serve via http://0.0.0.0:5000/
+python refreeze/freeze.py    # create static html
+git add index.html           # deploy html to github pages
+git commit -m "initial commit"
 ```
 
 Now create a `gh-pages` branch and push the branch to GitHub
 (adapt username and repository name):
 
 ```shell
-$ git checkout -b gh-pages
-$ git remote add origin git@github.com:you/example.git
-$ git push -u origin gh-pages
+git checkout -b gh-pages
+git remote add origin git@github.com:you/example.git
+git push -u origin gh-pages
 ```
 
 Few minutes later marvel at http://you.github.io/example/. Yay!
